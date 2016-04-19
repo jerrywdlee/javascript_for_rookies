@@ -1,0 +1,12 @@
+<script type="text/javascript">
+  function arg_demo2(foo,bar,baz = "Baz") {
+    alert(foo);
+    alert(bar);
+    alert(baz);
+  }
+</script>
+<!-- alert: Foo,Bar,Baz -->
+<button onclick="arg_demo2('Foo','Bar');">argument Demo 1</button>
+
+<!-- alert: Foo,Bar,FooBar -->
+<button onclick="arg_demo2('Foo','Bar','FooBar');">argument Demo 2</button>
