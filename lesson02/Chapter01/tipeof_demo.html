@@ -1,0 +1,20 @@
+<script type="text/javascript">
+  var foo;
+  function typeof_demo() {
+    alert(foo);// undefined
+    alert(typeof foo);// undefined
+    foo = "Foo";
+    alert(foo);// Foo
+    alert(typeof foo);// string
+    foo = 123;
+    alert(foo);// 123
+    alert(typeof foo);// number
+    foo = 1.23
+    alert(foo);// 1.23
+    alert(typeof foo);// number
+    foo = true;
+    alert(foo);// true
+    alert(typeof foo);// boolean
+  }
+</script>
+<button onclick="typeof_demo();">typeof Demo</button>

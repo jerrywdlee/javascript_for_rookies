@@ -1,0 +1,9 @@
+<script type="text/javascript">
+  const FOO = "Foo"// better use upper char for const
+  function const_demo() {
+    alert(FOO);// Foo
+    FOO = "Bar";// Can not change a const, but no error.
+    alert(FOO);// Foo
+  }
+</script>
+<button onclick="const_demo();">Const Demo</button>

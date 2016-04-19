@@ -1,0 +1,12 @@
+<script type="text/javascript">
+  function rec_demo(foo) {
+    alert(foo);
+    foo--;
+    if (foo === 0) {
+      return;
+    }
+    rec_demo(foo);
+  }
+</script>
+<!-- alert 5,4,3,2,1 -->
+<button onclick="rec_demo(5)">Recursion Demo</button>

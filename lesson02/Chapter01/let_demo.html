@@ -1,0 +1,13 @@
+<script type="text/javascript">
+  function let_demo1() {
+    let foo = "Foo";
+    alert(foo);// Foo
+    {
+      alert(foo);// Foo
+      let bar = "Bar"
+      alert(bar)// Bar
+    }
+    alert(bar)// Error: bar is not defined
+  }
+</script>
+<button onclick="let_demo1()">let Demo1</button>

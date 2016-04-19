@@ -1,0 +1,23 @@
+<script type="text/javascript">
+var foo = "Foo";
+function var_demo() {
+  alert(foo);// Foo
+  var bar = "Bar";
+  alert(bar);// Bar
+}
+function var_demo2() {
+  alert(foo);// Foo
+  alert(bar);// Error log: Can't find variable: bar
+  //stop here
+  alert(foo);// won't be shown
+}
+function var_demo3() {
+  alert(foo);// Foo
+  alert(baz);// undefined
+  var baz = "Baz";
+  alert(baz);// Baz
+}
+</script>
+<button onclick="var_demo();">var Demo</button>
+<button onclick="var_demo2();">var Demo2</button>
+<button onclick="var_demo3();">var Demo3</button>

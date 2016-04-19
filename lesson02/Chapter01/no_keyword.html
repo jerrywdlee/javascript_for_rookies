@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  function no_key_demo1() {
+    foo = "Foo";
+    alert(foo);// Foo
+  }
+  function no_key_demo2() {
+    alert(foo);// if used 1st, "Can't find variable: foo"
+    //else will show defined "foo"
+  }
+  function no_key_demo3() {
+    foo = "Bar";
+    alert(foo);// Bar
+  }
+</script>
+<button onclick="no_key_demo1()">No Keyword1</button>
+<button onclick="no_key_demo2()">No Keyword2</button>
+<button onclick="no_key_demo3()">No Keyword3</button>
